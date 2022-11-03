@@ -15,6 +15,10 @@ $ sudo apt install python3-pip
 ```bash
 $ python -m venv venv
 ```
+#### pip 업그레이드
+```bash
+$ pip install --upgrade pip
+```
 
 #### 우분투에서 파이썬3을 사용할때
 ```bash
@@ -45,4 +49,10 @@ $ pip install opencv-contrib-python==3.4.1.15
 - matplotlib 설치
 ```bash
 $ pip install matplotlib
+```
+
+- matplotlib에 대비하여 tk 모듈 설치
+```bash
+$ sudo apt-get update
+$ sudo apt-get install python3-tk
 ```
