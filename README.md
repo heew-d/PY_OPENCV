@@ -52,7 +52,7 @@ $ source ./venv/bin/activate
 
 #### 가상환경 비활성화
 ```bash
-(가상환경이름)$ Deactivate
+(가상환경이름)$ deactivate
 ```
 
 ## 파이썬 버전 3.10으로 설치
