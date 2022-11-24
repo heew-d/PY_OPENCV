@@ -3,11 +3,11 @@ import cv2
 import numpy as np
 
 src = np.array([
-                [2,2,4,4],
-                [2,2,4,4],
-                [4,4,4,4],
-                [4,4,4,4]
-            ], dtype=np.uint8)
+    [2,2,4,4],
+    [2,2,4,4],
+    [4,4,4,4],
+    [4,4,4,4]
+], dtype=np.uint8)
 
 #1
 dst = cv2.equalizeHist(src)
