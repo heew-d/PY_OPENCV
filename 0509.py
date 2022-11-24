@@ -27,10 +27,10 @@ d1 = cv2.compareHist(H1, H2, cv2.HISTCMP_CORREL)
 d2 = cv2.compareHist(H1, H2, cv2.HISTCMP_CHISQR)
 d3 = cv2.compareHist(H1, H2, cv2.HISTCMP_INTERSECT)
 d4 = cv2.compareHist(H1, H2, cv2.HISTCMP_BHATTACHARYYA)
-print('d1(H1, H2, CORREL)=', d1)
-print('d2(H1, H2, CHISQR)=', d2)
-print('d3(H1, H2, INTERSECT)=', d3)
-print('d4(H1, H2, BHATTACHARYYA)=', d4)
+print('d1(H1, H2, CORREL)=', d1) #값이 클수록 유사
+print('d2(H1, H2, CHISQR)=', d2) #값이 작을수록 유사
+print('d3(H1, H2, INTERSECT)=', d3) #값이 클수록 유사
+print('d4(H1, H2, BHATTACHARYYA)=', d4) #값이 작을수록 유사
 
 plt.plot(H2, color='b', label = 'H2')
 plt.legend(loc= 'best')
