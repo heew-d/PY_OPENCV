@@ -14,8 +14,17 @@ samplePlots = []
 
 result = 0
 
+# 이동평균필터
+# 평균을 낼 샘플의 갯수를 지정된 수의 최신 원소들로만 유지하고 해당 원소들로 평균을 구함
+x = 10
+n = 0
+
 for i in range(sampleCount):
-    sample = random.uniform(50,51)
+    # 매 10의 배수 횟차마다 n을 증가
+    if i % 10 == 0:
+        n += 1
+
+    sample = random.uniform(50+n,51+n)
     samples.append(sample)
     # print('val : ',val)
     # 평균 필터
@@ -35,6 +44,10 @@ for i in range(sampleCount):
 
     samplePlots.append([sample])
     meanPlots.append([mean])
+
+def meanFilterForBatch():
+    mean = sum(samples) / len(samples)
+    return mean
 
 print('result mean : ', mean)
 
