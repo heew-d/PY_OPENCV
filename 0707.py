@@ -18,6 +18,16 @@ contours, hierarchy = cv2.findContours(gray, mode, method)
 print('len(contours)=', len(contours))
 print('contours[0].shape=', contours[0].shape)
 print('contours=', contours)
+print('hierarchy=', hierarchy)
+
+# 동생, 형, 첫째 자식, 부모
+# next, previous, first child, parent
+# [[
+#   [ 1 -1 -1 -1]
+#   [ 2  0 -1 -1]
+#   [-1  1 -1 -1]
+# ]]
+
 
 #3
 for cnt in contours:
